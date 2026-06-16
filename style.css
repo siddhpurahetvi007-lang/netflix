@@ -1,0 +1,580 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: url(net.png);
+  object-fit: cover;
+  background-attachment: fixed;
+  background-image:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url("net.png");
+    background-size: cover;
+    background-position: center;
+  }
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: url("net.png") center/cover no-repeat;
+    
+    filter: blur(8px);
+    transform: scale(1.1); /* prevents blur edges */
+
+    z-index: -2;
+}
+
+body::after{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.6); /* dark overlay */
+
+    z-index: -1;
+}
+.hero1{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 20px;
+}
+.logo{
+    height:40px;
+    width: 40px;
+    margin-left: 100px;
+}
+.nav{
+    position: absolute;
+    top:2%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+}
+.sign{
+    height:37px;
+    width:87px;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    font-weight: 700;
+    position: absolute;
+    top:2%;
+    margin-left: 1290px;
+}
+.nav2{
+    
+    width: 100%;
+    position: fixed;
+    top:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.box{
+    
+    width: 330px;
+    display: flex;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    position: fixed;
+}
+.a{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.663);
+    font-weight: 520;
+    font-size: 13.5px;
+}
+.hero2{
+    
+    width:100%;
+    margin-top: 50px;
+    position: relative;
+}
+video{
+    height:660px;
+    width: 92%;
+    object-fit: cover;
+    margin-left: 60px;
+    margin-top: 70px;
+    border-radius: 24px;
+    border: 3px solid rgba(51, 50, 50, 0.663);
+}
+.image{
+    height:auto;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+.love{
+    margin-top: 340px;
+    margin-left: 100px;
+}
+.email{
+    border: 2px solid rgba(168, 161, 161, 0.663);
+    border-radius: 100px;
+    height: 60px;
+    width: 280px;
+    margin-left: 160px;
+    margin-top: 20px;
+    background-color:rgba(34, 33, 33, 0.663) ;
+    color:rgba(255, 255, 255, 0.663);
+    text-align: center;
+    font-size: 17px;
+}
+.join{
+    border-radius: 100px;
+    height: 55px;
+    width:200px;
+    margin-left: 200px;
+    margin-top: 20px;
+   
+    font-size: 17px;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+p{
+    color: white;
+    font-size: 17px;
+    margin-top: 20px;
+    margin-left: 160px;
+
+}
+button{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: 2px solid rgba(255, 255, 255, 0.663);
+    background-color:rgba(34, 33, 33, 0.663);
+    margin-right: 20px;
+}
+.info{
+    position: relative;
+}
+.hero3{
+    height:210px;
+    width: 1190px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(25px);
+    border: 1.5px solid rgba(255,255,255,0.08);
+    margin-left: 140px;
+    margin-top: 80px;
+    border-radius: 20px;
+    border: 2px rgba(255, 255, 255, 0.874);
+    
+}
+h3{
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    position: absolute;
+    top:20%;
+    left:4%;
+}
+.p1{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    top:30%;
+    left:-115px;
+}
+h4{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    top:60%;
+    left:40px;
+}
+.p2{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    top:40%;
+    left:50%;
+}
+.hero4{
+    height: 570px;
+    width: 100%;
+    margin-top: 300px;
+}
+.epi{
+    margin-left: 150px;
+    color: white;
+    margin-top: -270px;
+}
+.episodes{
+    width: 100%;
+    height: 420px;
+    margin-left: -155px;
+    margin-top: 18px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-width: none;
+}
+.card1:first-child{
+    margin-left: 290px;
+}
+.card1{
+    width: 350px;
+    height: 360px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255,255,255,0.08);
+    margin-left: 20px; 
+    margin-top: 40px;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+.ep1{
+    margin-top: 13px;
+    margin-left: 13px;
+    border-radius: 20px;
+    width: 320px;
+    height: 170px;
+}
+.epip1{
+    margin-top: 17px;
+    margin-left: 39px;
+    font-size: 15.6px;
+    font-weight: 580;
+}
+.ref1{
+    margin-top: 20px;
+    margin-left: 39px;
+    font-size: 14.6px;
+    color: rgb(176, 175, 175);
+}
+.hero5{
+    
+    width: 100%;
+    margin-top: 250px;
+}
+.more{
+    height: 380px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+.online{
+    margin-top: 40px;
+    margin-left: 150px;
+    height: 240px;
+    width: 26.5%;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+    
+}
+.audio{
+    margin-top: 40px;
+    height: 240px;
+    width: 26.5%;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+}
+.cast{
+    margin-top: 40px;
+    height: 240px;
+    width: 26.5%;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+}
+.watch{
+    font-size: 13.5px;
+    position: absolute;
+    top:5px;
+    right:70.8%;
+    font-weight: 550;
+}
+.a1{
+    font-size: 13.5px;
+    position: absolute;
+    top:27px;
+    left:-130px;
+    color: rgb(176, 175, 175);
+    font-weight: 550;
+}
+.a2{
+    font-size: 13.5px;
+    position: absolute;
+    left:-130px;
+    top:50px;
+    font-weight: 550;
+}
+.a3{
+    font-size: 13.5px;
+    position: absolute;
+    top:30%;
+    left:-130px;
+    color: rgb(176, 175, 175);
+    font-weight: 550;
+}
+.a4{
+    font-size: 13.5px;
+    position: absolute;
+    left:-130px;
+    top:47%;
+    font-weight: 550;
+}
+.a5{
+    font-size: 13.5px;
+    position: absolute;
+    top:55%;
+    left:-130px;
+    color: rgb(176, 175, 175);
+    font-weight: 550;
+}
+.b1{
+    font-size: 13.5px;
+    position: absolute;
+    top:3%;
+    left:-130px;
+    font-weight: 550;
+}
+.b2{
+    font-size: 13.5px;
+    position: absolute;
+    top:12%;
+    left:-130px;
+    color: rgb(176, 175, 175);
+    font-weight: 550;
+}
+.b3{
+    font-size: 13.5px;
+    position: absolute;
+    top:22%;
+    left:-130px;
+    font-weight: 550;
+}
+.b4{
+    font-size: 13.5px;
+    position: absolute;
+    top:32%;
+    left:-130px;
+    color: rgb(176, 175, 175);
+    font-weight: 550;
+}
+.c1{
+    font-size: 13.5px;
+    position: absolute;
+    top:3%;
+    left:-130px;
+    font-weight: 550;
+}
+.c2{
+    font-size: 13.5px;
+    position: absolute;
+    top:15%;
+    left:-130px;
+    color: rgb(176, 175, 175);
+    font-weight: 550;
+}
+.hero6{
+    height: 350px;
+    width: 90%;
+   
+}
+.h1like{
+    color: white;
+    margin-top: 25px;
+    margin-left: 140px;
+}
+.cards{
+    height: 300px;
+    width: 100%;
+    
+    margin-top: 40px;
+    display: flex;
+    scrollbar-width: none;
+    gap:18px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.like1:first-child{
+    margin-left: 150px;
+}
+
+.i1{
+    width: 180px;
+    height: 280px;
+    border-radius: 18px;
+}
+.plan{
+    height: 330px;
+    width: 90%;
+    
+}
+.h1like2{
+    color: white;
+    margin-top: 40px;
+    margin-left: 140px;
+}
+.pay{
+    display: flex;
+    gap: 16px;
+}
+.box1{
+    margin-top: 20px;
+    height: 250px;
+    width: 270px;
+    background:
+
+        radial-gradient(circle at bottom right,
+
+            rgba(90,0,255,0.4),
+
+            transparent 35%),
+
+        linear-gradient(
+
+            135deg,
+
+            #1f4a82,
+            #122c55,
+            #09031f
+
+        );
+        border: 2px solid rgba(255, 255, 255, 0.12);
+
+    box-shadow:
+
+        inset 0 1px 1px rgba(255,255,255,0.08),
+
+        0 0 0 1px rgba(255,255,255,0.04);
+    border-radius: 18px;
+}
+.box1:first-child{
+    margin-left: 140px;
+}
+.box2{
+    margin-top: 20px;
+    height: 250px;
+    width: 270px;
+    background:
+
+        radial-gradient(circle at bottom right,
+
+            rgba(120,0,255,0.4),
+
+            transparent 35%),
+
+        linear-gradient(135deg,#8b2357,#3a145f,#09031f);
+        border: 2px solid rgba(255, 255, 255, 0.12);
+
+    box-shadow:
+
+        inset 0 1px 1px rgba(255,255,255,0.08),
+
+        0 0 0 1px rgba(255,255,255,0.04);
+    border-radius: 18px;
+}
+.box1,
+.box2{
+    padding: 25px;
+    position: relative;
+    box-sizing: border-box;
+}
+.quality{
+    margin-top: -65px;
+    color: rgb(176, 175, 175);
+    font-weight: 550;
+}
+.features1{
+    margin-left: -2px;
+    margin-top: 85px;
+    color: rgb(229, 227, 227);
+}
+.features2{
+    margin-left: -2px;
+    margin-top: 5px;
+    color: rgb(229, 227, 227);
+}
+.price{
+    position: absolute;
+    top:190px;
+    color: rgb(176, 175, 175);
+}
+.hero7{
+    height: 300px;
+    width: 90%;
+    position: relative;
+}
+.boxs{
+    margin-left: 140px;
+    height: 100px;
+    width: 85%;
+    background-image: url(net.png);
+    object-fit: cover;
+    position: absolute;
+    top:40px;
+    border-radius: 18px;
+}
+.discover{
+    color: white;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.moreN{
+    position: absolute;
+    right: 5%;
+    top: 30px;
+    color: white;
+    font-weight: 550;
+    height: 35px;
+    width: 170px;
+    border-radius: 20px;
+    border: 1.5px solid rgb(176, 175, 175);
+}
+.join1{
+    border-radius: 100px;
+    height: 50px;
+    width:250px;
+    position: absolute;
+    top:180px;
+    left:45%;
+    background-color: red;
+    font-size: 17px;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+
